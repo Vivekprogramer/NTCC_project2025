@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign In</title>
-        <link rel="stylesheet" href="sign_in.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="signin-box">
-                <h2>Sign In</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="sign_in.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signin-box">
+            <h2>Sign In</h2>
+
+            <!-- ✅ Connected form -->
+            <form action="sign_in.php" method="POST">
                 <div class="input-group">
                     <label>Phone No.</label>
-                    <input type="tel" placeholder="Enter your Phone No." required>
+                    <input type="tel" name="phone_no" placeholder="Enter your Phone No." required>
                 </div>
-                <form>
-                    <div class="input-group">
-                        <label>Enrollment No.</label>
-                        <input type="unique" placeholder="Enter your college Inrollment No." required>
-                        <div class="input-group">
-                        </div>
-                            <label>Password</label>
-                    <input type="password" placeholder="Enter your password" required>
+
+                <div class="input-group">
+                    <label>Enrollment No.</label>
+                    <input type="text" name="enrollment_no" placeholder="Enter your college Enrollment No." required>
                 </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                </div>
+
                 <div class="options">
                     <label><input type="checkbox"> Remember me</label>
                     <a href="forgot_pass.html">Forgot password?</a>
                 </div>
+
                 <button type="submit">Sign In</button>
             </form>
         </div>
